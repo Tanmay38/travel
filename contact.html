@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+         body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #8d9d69;
+  
+         }
+       .navbar {
+
+
+            /* position: fixed; */
+            width: 100%;
+            height: 80px;
+            /* background-colSor: #fee; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* color: #000; */
+            /* background: transparent; */
+            background-color: white;
+        }
+
+     
+
+        .white {
+            background: white;
+            border: 1px solid black;
+        }
+
+        .menu ul {
+                list-style: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            list-style: none;
+            color: #000;
+            padding: 5px 12px;
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+
+        .menu ul li a:hover {
+            /* border-bottom: 4px solid #000; */
+            color: #ff0000;
+            transition: 0.4s;
+        }
+
+        .signup a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            padding: 12px 30px;
+            border: 2px solid #ff0000;
+        }
+
+        .signup a:hover {
+            background-color: red;
+            transition: 0.6s;
+        }
+
+        .butt a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            padding: 12px 30px;
+            /* border: 2px solid #ff0000; */
+        }
+
+        .butt button:hover,
+        .butt a:hover {
+            background-color: transparent;
+            color: black;
+        }
+
+        .butt button {
+            background-color: red;
+            border-radius: 12px;
+            padding: 12px 0px;
+
+            border: 2px solid #ff0000;
+        }
+
+        .form-header {
+            font-size: 18px;
+            border-bottom: 1px solid #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        
+
+        .wrapper {
+            background-color: #000;
+            color: white;
+            /* padding-bottom: 200px; */
+            margin-left: 300px;
+            padding: 0 25px;
+            width: 710px;
+            border: 1px solid #666;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            border-top: 3px solid #3c8dbc;
+            /* margin-top: 250px; */
+        }
+
+        form {
+            margin: 30px 0;
+        }
+
+        .form-label {
+            float: left;
+            width: 150px;
+        }
+
+        .form-row {
+            margin: 12px 0;
+        }
+
+
+        input,
+        textarea,
+        select {
+            width: 500px;
+            height: 28px;
+            border: 1px solid #d2d6de;
+            padding: 2px 8px;
+        }
+
+        textarea {
+            height: 50px;
+        }
+
+        input[type=radio],
+        input[type=checkbox] {
+            width: 20px;
+            color: red;
+            height: 14px;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            width: 100px;
+            margin-right: 50px;
+            background-color: #3c8dbc;
+            border-color: #367fa9;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover,
+        input[type=reset]:hover {
+            background-color: #367fa9;
+        }
+
+
+        .form-field:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        
+
+        .white {
+            background: white;
+            border: 1px solid black;
+        }
+
+        .menu ul {
+            background: transparent;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 12px;
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+
+        .menu ul li a:hover {
+            /* border-bottom: 4px solid #000; */
+            transition: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>S.T. Travel</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">About US</a></li>
+            </ul>
+        </div>
+        <div class="signup">
+            <a href="#">Sign Up</a>
+        </div>
+        <div class="butt">
+            <button><a href="book.html">BOOK NOW</a></button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="form-header">Contact US</div>
+        <form action="" method="">
+
+            <div class="form-row">
+                <div class="form-label">Name</div>
+                <div class="form-field">
+                    <input type="text" name="name" />
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="form-label">Phone</div>
+                <div class="form-field">
+                    <input type="number" name="phone" placeholder="Please enter a number only" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Gender</div>
+                <div class="form-field">
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Preference:</div>
+                <div class="form-field">
+                    <input type="checkbox" name="">Morning
+                    <input type="checkbox" name="">Evening
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Message</div>
+                <div class="form-field">
+                    <textarea name="message" rows="5" cols="50"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Service</div>
+                <div class="form-field">
+                    <select name="service">
+                        <option value="one">Enquiry</option>
+                        <option value="two">Complaint</option>
+                        <option value="three">Physical Booking</option>
+                        <option value="four">Proposal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label">Date of Birth</div>
+                <div class="form-field">
+                    <input type="date" name="date" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label"> &nbsp; </div>
+                <div class="form-field">
+                    <input type="reset" name="reset" />
+                    <input type="submit" name="message" value="Submit" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

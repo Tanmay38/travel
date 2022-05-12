@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(1.jpg);
+        background-repeat: no-repeat;
+	background-size: cover;
+    color: white;
+
+    }
+    .navbar{
+        position: relative;
+    }
+    .navbar h1{
+        color: black;
+        
+    }
+    form {
+        /* border: 2px solid black; */
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        margin: 0px;
+
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=Email] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=phone] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+
+    input[type=date] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    
+
+    .container {
+        /* border: 2px solid black; */
+        margin-left: 400px;
+        border-radius: 5px;
+        margin-right: 400px;
+        /* background-color: #f2f2f2; */
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        height: 500px;
+    }
+    .but{
+        color: black;
+        width: 100px;
+        height: 40px;
+        background-color: black;
+        cursor: pointer;
+    }
+    .but a{
+        color: white;
+        text-decoration: none;
+        
+    }
+    .but:hover{
+        background-color: red;
+        border-color: red;
+    }
+</style>
+
+<body>
+    
+    <div class="navbar">
+        <div class="logo">
+            <h1>S.T. Travel</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="blog.html">Offers & Packages</a></li> -->
+                <li><a href="book.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">About US</a></li>
+    
+            </ul>
+        </div>
+        <div class="signup">
+            <a href="#">Sign Up</a>
+        </div>
+        <div class="butt">
+            <button><a href="book.html">BOOK NOW</a></button>
+        </div>
+    </div>
+    <form action="">
+
+        <h2>Book your package</h2>
+        <hr>
+        <div class="container">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="Emal">Email</label>
+                <input type="Email" id="lname" name="lastname" placeholder="Email">
+
+                <label for="Phone No">Phone No</label>
+                <input type="Phone" id="lname" name="lastname" placeholder="Phone ">
+
+                <label for="subject">Search Destination</label>
+                <input type="Phone" id="lname" name="lastname" placeholder="Search Destination ">
+                <!-- <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+
+            </form>
+            <div>
+                <label for="date">Date</label>
+                <input type="date">
+
+            </div>
+            <div>
+                Guests <select name="" id="">
+                    <option value="">2 Adults 1Room</option>
+                    <option value="">4 Adults 2Room</option>
+                </select>
+            </div>
+        
+             <button class="but"><a href="after.html">Submit</a></button>
+        </div>  
+    </form>
+</body>
+
+</html>
